@@ -1,0 +1,143 @@
+/* style.css */
+/* สไตล์ทั่วไป */
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@500&display=swap');
+
+body {
+    font-family: 'Oswald', sans-serif;
+}
+
+
+/* สไตล์เฮดเดอร์ */
+header {
+    background-color: #f8f9fa;
+}
+
+/* สไตล์เมนู */
+.navbar {
+    background-color: #f8f9fa;
+}
+
+/* สไตล์หัวเรื่องหน้าหลัก */
+.jumbotron {
+    background-image: url('https://i.gifer.com/2MdY.gif');
+    background-size: cover;
+    color: #fff;
+    text-align: center;
+    padding: 100px 0;
+}
+
+/* สไตล์ฟุตเตอร์ */
+footer {
+    background-color: #343a40;
+    color: #fff;
+    padding: 10px 0;
+}
+
+/* ลิงก์ไฟล์ CSS สำหรับสไตล์เพิ่มเติม */
+
+/* ปรับขนาดรูปภาพที่มี ID "img1" */
+#img1 img {
+    width: 40%;
+    /* กำหนดความกว้างให้เต็มหน้าจอ */
+    max-height: 550px;
+    /* ให้รูปภาพปรับขนาดอัตโนมัติและครอบคลุมพื้นที่ */
+    border: 2px solid #dad0d0;
+    border-radius: 50px;
+    /* เพิ่มขอบด้วยเส้นสีดำ 2 พิกเซล */
+}
+
+.card-text {
+    color: #696b6d;
+}
+
+
+
+/* Button only*/
+.buttoncolor {
+    padding: 0.6em 2em;
+    border: none;
+    outline: none;
+    color: rgb(255, 255, 255);
+    background: #111;
+    cursor: pointer;
+    position: relative;
+    z-index: 0;
+    border-radius: 10px;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    
+}
+
+.buttoncolor:before {
+    content: "";
+    background: linear-gradient(45deg,
+            #ff0000,
+            #ff7300,
+            #fffb00,
+            #48ff00,
+            #00ffd5,
+            #002bff,
+            #7a00ff,
+            #ff00c8,
+            #ff0000);
+    position: absolute;
+    top: -2px;
+    left: -2px;
+    background-size: 400%;
+    z-index: -1;
+    filter: blur(5px);
+    -webkit-filter: blur(5px);
+    width: calc(100% + 4px);
+    height: calc(100% + 4px);
+    animation: glowing-button-85 20s linear infinite;
+    transition: opacity 0.3s ease-in-out;
+    border-radius: 10px;
+}
+
+@keyframes glowing-button-85 {
+    0% {
+        background-position: 0 0;
+    }
+
+    50% {
+        background-position: 400% 0;
+    }
+
+    100% {
+        background-position: 0 0;
+    }
+}
+
+.buttoncolor:after {
+    z-index: -1;
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: #222;
+    left: 0;
+    top: 0;
+    border-radius: 10px;
+}
+
+
+.social-img ul {
+	margin: 0;
+	text-align: center;
+	width: 100%;
+	
+
+}
+
+.social-img ul li {
+	display: inline;
+	padding: 10px;
+	cursor: pointer;
+}
+
+.social-img ul li :hover {
+	background: whitesmoke;
+}
+
+
